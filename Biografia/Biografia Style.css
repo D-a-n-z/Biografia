@@ -1,17 +1,18 @@
-/* PC */
+/* Beckground */
 body{
   margin: 0;
-  height: 130vh;
+  height: 140vh;
   background: linear-gradient(
     #e2e2e2,
-    rgba(133, 132, 132, 0.986),
-    rgba(71, 71, 71, 0.986)
+    rgba(143, 141, 141, 0.986),
+    rgba(40, 40, 40, 0.986)
   );                
 }
 
+/* Caixa */
 .box{
-  width: 1200px;
-  height: 480px;
+  width: 1280px;
+  height: 500px;
   margin: 60px auto;
   background-color: rgb(68, 68, 68);
   border-radius: 20px;
@@ -19,33 +20,26 @@ body{
   padding: 20px;
 }
 
+/* Adolphe Sax */
 .t{
   color: rgba(255, 255, 255, 0.845);
   font-family: poppins;
+  margin-left: 50px;
   margin-top: 5px;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
 }
-
+  /* Imagem de Adolphe Sax */
   .img{
     width: 330px;
     height: 330px;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 10px;
     float: left;
   }
-  
-  .p{
-    color: rgba(255, 255, 255, 0.845);
-    font-family: inter;
-    margin-top: 5px;
-    text-align: left;
-    font-size: 25px;
-    margin-left: 380px;
-    margin-top: -10px;
-  }
-  
+
+  /* Titulo */
   .t2{
     color: rgba(255, 255, 255, 0.845);
     font-family: poppins;
@@ -56,43 +50,119 @@ body{
     margin-top: 70px;
   }
 
-  .box-op1{
-    width: 200px;
-    height: 100px ;
-    margin: 180px;
-    margin-top: 20px;
-    background-color: rgb(78, 76, 76);
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    cursor: pointer;
-  
+  /* Texto */
+  .txt{
+    color: rgba(255, 255, 255, 0.845);
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -90px;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 380px;
+    margin-top: -10px;
   }
+
+  
+  /* Primeira Opção */
+  .box-op1{
+    display: flex;
+    background: rgb(54, 54, 54);
+    margin-left: 160px;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center; 
+    align-items: center;
+  }
+  /* Confg. do texto do Botão */
+  .t-1{
+    color: white;
+    font-size: 26px;
+    font-family: Inter;
+  }
+  /* Animção do Botão */
   .box-op1:hover{
-    background-color: rgb(61, 58, 58);
+    background-color: rgb(128, 128, 128);
     transition: 0.5s;
     transform: scale(1.1);
   }
 
-  .t0{
-    color: rgba(255, 255, 255, 0.845);
-    font-family: inter;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
+  /* Segunda Opção */
+  .box-op2{
+    display: flex;
+    background: rgb(54, 54, 54) ;
+    margin-top: -100px; 
+    margin-left: 600px;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
   }
+
+  /* Confg. do texto do Botão */
+  .t-2{
+    color: white;
+    font-size: 26px;
+    font-family: Inter;
+  }
+
+
+  /* Animção do Botão */
+  .box-op2:hover{
+    background-color: rgb(128, 128, 128);
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+
+  /* Terceira Opção */
+    .box-op3{
+    display: flex;
+    background: rgb(54, 54, 54) ;
+    margin-top: -100px; 
+    margin-left: 1050px;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+  }
+
+  /* Confg. do texto do Botão */
+  .box-op3:hover{
+    background-color: rgb(128, 128, 128);
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+
+  /* Animção do Botão */
+  .t-3{
+    color: white;
+    font-size: 26px;
+    font-family: Inter;
+  }
+  
 /* CELULAR */
 @media (max-width: 768px){
 
-  .box{
-    width: auto;
+  body{
     height: auto;
-    padding: 15px;
+  }
+
+  .box{
+    width: 92%;
+    height: auto;
+    padding: 20px;
   }
 
   .t{
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .img{
@@ -104,17 +174,35 @@ body{
   }
 
   .t2{
-    margin-left: 0;
-    margin-top: 20px;
+    margin: 20px 0 10px 0;
     text-align: center;
     font-size: 22px;
   }
 
-  .p{
-    margin-left: 0;
+  .txt{
+    margin: 0;
     text-align: justify;
     font-size: 18px;
-    margin-top: 10px;
+    line-height: 1.6;
   }
 
+  .box-op1,
+  .box-op2,
+  .box-op3{
+    width: 100%;
+    max-width: 320px;
+    height: 80px;
+    margin: 15px auto;
+  }
+
+  .box-op2,
+  .box-op3{
+    margin-top: 15px;
+  }
+
+  .t-1,
+  .t-2,
+  .t-3{
+    font-size: 20px;
+  }
 }
