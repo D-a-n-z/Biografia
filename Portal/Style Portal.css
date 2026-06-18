@@ -1,0 +1,12 @@
+body{
+  background:linear-gradient(#1f2934, #1e2b39);
+  min-height: 100vh;
+  margin: auto;
+}
+
+.Box{
+  display: flex;
+  background-color: white;
+  width: 100px;
+  height: 100px;  
+}
